@@ -1,0 +1,23 @@
+<table>
+  <thead>
+    <th>Name</th>
+    <th>Price</th>
+    <th></th>
+  </thead>
+  <tbody>
+    {{#each stocks}}
+      <tr>
+        <td class="name">{{name}}</td>
+        <td class="price">{{price}}</td>
+        <td>
+          {{#if this.favorited }}
+            <button disabled>Unfavorite</button>
+            {{else}}
+
+            <button class="favorite">Favorite</button>
+          {{/if}}
+        </td>
+      </tr>
+    {{/each}}
+  </tbody>
+</table>

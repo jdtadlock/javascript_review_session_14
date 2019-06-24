@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    #header-text {
+      background: red;
+    }
+
+    h1[aria-label="Name"] {
+      background: orange !important;
+    }
+
+    #header-text span {
+      background: white;
+    }
+
+    #header-text span i {
+      font-size: 10px;
+    }
+    /* h1 with a class of span */
+    /* h1.span */
+  </style>
+</head>
+<body>
+  <h1 id="header-text" aria-label="Name">Header <span>Inner Text <i>Italic</i></span></h1>
+</body>
+</html>
